@@ -1,0 +1,38 @@
+body{
+    aside{
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(	252,	222,	242, .9);
+        z-index: 2;
+        left: -16rem;
+        transition: all .8s;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width:375px){
+            left: -19rem;
+        }
+         @media only screen and (min-width:425px){
+            left: -22rem;
+        }
+         @media only screen and (min-width:768px){
+            display: none;    
+        }
+        
+        a{
+            margin-top: 5%;
+            margin-left: 5%;
+            font-family: buda;
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 1.5rem;
+            color: #000000;
+        }
+    }
+    
+    .on{
+        left: 0;
+        transition: all .8s;
+    }
+}

@@ -1,0 +1,87 @@
+header{
+    height: 8.6rem;
+    width: 100%;
+    position: relative;
+    background-color: #FCDEF2;
+    z-index: 2;
+    margin-bottom: 3rem;
+    h1{
+        font-family: Island Moments;
+        font-size: 4.5rem;
+        margin-left: 10%;
+    }
+
+    #logo{
+        position: absolute;
+        left: 6%;
+        top: 29%;
+        height: 6rem;
+        width: 6rem;
+        transform: rotate(350deg);
+    }
+
+    .menu-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        right: 2rem;
+        top: 2rem;
+
+        .linha1,.linha2,.linha3{
+            width: 90%;
+            border: 2px solid #000000;
+            transition: all .77s;
+        }
+        @media only screen and (min-width:768px){
+            display: none;    
+        }
+    }
+
+    nav{
+        position: absolute;
+        right: 5rem;
+        width: 26rem;
+        top: 2.5rem;
+        
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            width: 100%;
+            li{
+                a{
+                    text-decoration: none;
+                    font-family: buda;
+                    color: #000000;
+                    &:hover{
+                        text-decoration: underline lightblue 5px;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width:425px) {
+            display: none;
+        }
+    }
+}
+
+.x{
+    .linha1{
+        display: none;
+    }
+
+    .linha2{
+        transform: rotate(45deg);
+        top: 1rem;
+        position: absolute;
+    }
+
+    .linha3{
+        transform: rotate(135deg);
+        top: 1rem;
+        position: absolute;
+    }
+}
